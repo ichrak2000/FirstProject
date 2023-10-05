@@ -1,0 +1,33 @@
+{{param}} //ta9ralik li f wst les accoulades 
+{% set x=5 %}
+<br>
+{%if 'asma' ends with 'a' %} // finis par a ou nn 
+     Finis par a 
+     {%endif%}
+
+<br>
+
+
+<br>
+{% set tab= [1, 2 , 3]%} //parcourir les tab 
+{% for i in tab  %}
+{{i}}
+{%endfor%}
+<br>
+{{ "hello" |upper }} //majus 
+
+
+//fonction t'hezna l esm route oukhra ahna hatyn'ha 
+{% set a=5 %}
+{{a}}
+<a href="{{ path ('app_accueil')}}">Home </a>
+
+
+<br>
+{% set b=5 %}
+{{b}}
+<a href="{{ url('app_accueil')}}">Home </a>
+
+<br>
+
+<img src="{{ asset('images/Taha_Hussein.jpg')}}"/> // affichage des l image 
