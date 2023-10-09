@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\Author3Repository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -64,7 +65,20 @@ class Author1Controller extends AbstractController
             'author1' => $author1,
             'id' => $id
         ]);
+
+
+    
     }
+
+
+
+
+
+
+
+
+
+
 
 
 

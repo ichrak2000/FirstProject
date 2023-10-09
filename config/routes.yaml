@@ -1,3 +1,11 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+app_edit_author:
+    path: '/edit/{id}'
+    controller: 'App\Controller\Author3Controller::edit'
+    methods: ['GET', 'POST']
+app_delete_author:
+    path: '/delete/{id}'
+    controller: 'App\Controller\Author3Controller::delete'
+    methods: ['DELETE']
